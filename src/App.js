@@ -5,6 +5,7 @@ function App() {
     <div>
       {/* <h2>hello world</h2> */}
       {/* <h2>yes</h2> */}
+      <Cart />
     </div>
   );
 }
