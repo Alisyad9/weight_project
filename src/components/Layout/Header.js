@@ -1,16 +1,18 @@
 import React from 'react';
 
+import classes from './Header.module.css';
+import cloud from '../../image/cloud.jpg';
+
 const Header = () => {
   return (
-    <section>
-      <header>
-        <h1>Meals</h1>
-        <button>Cart</button>
+    <React.Fragment>
+      <header className={classes.header}>
+        <h1>Meals</h1> <button>Cart</button>
       </header>
-      <div>
-        <img />
+      <div className={classes['main-image']}>
+        <img src={cloud} alt="clouds in the sky" />
       </div>
-    </section>
+    </React.Fragment>
   );
 };
 
