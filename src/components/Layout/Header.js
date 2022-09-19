@@ -2,12 +2,15 @@ import React from 'react';
 
 const Header = () => {
   return (
-    <div>
+    <section>
       <header>
         <h1>Meals</h1>
         <button>Cart</button>
       </header>
-    </div>
+      <div>
+        <img />
+      </div>
+    </section>
   );
 };
 
