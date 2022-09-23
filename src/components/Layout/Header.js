@@ -9,9 +9,9 @@ const Header = () => {
       <header className={classes.header}>
         {/* <h1>Meals</h1> <button>Cart</button> */}
       </header>
-      <div className={classes['main-image']}>
+      {/* <div className={classes['main-image']}>
         <img src={cloud} alt="clouds in the sky" />
-      </div>
+      </div> */}
     </React.Fragment>
   );
 };
