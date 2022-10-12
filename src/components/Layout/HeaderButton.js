@@ -7,7 +7,6 @@ const HeaderButton = () => {
   return (
     <button className={classes.button}>
       <span className={classes.icon}>
-        {' '}
         <Cart />
       </span>
 
