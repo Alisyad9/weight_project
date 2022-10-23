@@ -16,3 +16,12 @@
 // };
 
 // export default HeaderButton;
+
+{
+  /* <script type="text/babel">
+const name = 'John Doe';
+ReactDOM.render(
+    <h1>Hello {name}!</h1>,
+    document.getElementById('id01'));
+</script> */
+}
