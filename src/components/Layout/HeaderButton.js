@@ -3,9 +3,9 @@ import Cart from '../Cart/Cart';
 import classes from './HeaderButton.module.css';
 import logo from '../../image/logo.svg';
 
-const HeaderButton = () => {
+const HeaderButton = (props) => {
   return (
-    <button className={classes.button}>
+    <button className={classes.button} onClick={props.onClick}>
       <span className={classes.icon}>
         {' '}
         <Cart />
