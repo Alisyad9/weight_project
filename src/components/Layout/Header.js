@@ -5,7 +5,6 @@ import cloud from '../../image/cloud.jpg';
 import HeaderButton from './HeaderButton';
 
 const Header = (props) => {
-  console.log('inside the Header.js function props:', props.onShowCart);
   return (
     <React.Fragment>
       <header className={classes.header}>
