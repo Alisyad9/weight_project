@@ -4,6 +4,7 @@ import CartItems from './components/Cart/CartItems';
 import Header from './components/Layout/Header';
 
 import Meals from './components/Meals/Meals';
+import CartProvider from './store/CartProvider';
 
 function App() {
   const [closePortal, setClosePortal] = useState(false);
@@ -16,16 +17,15 @@ function App() {
   }
 
   return (
-    <Fragment>
-      {closePortal && <CartItems />}
+    <CartProvider>
+      {closePortal && <CartItems onClosed={hidePortalCartHandler} />}
       {/* <h2>hello world</h2> */}
       {/* <h2>yes</h2> */}
-
       <Header onShowCart={showPortalCartHandler} />
       <main>
         <Meals />
       </main>
-    </Fragment>
+    </CartProvider>
   );
 }
 
