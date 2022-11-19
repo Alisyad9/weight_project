@@ -40,8 +40,6 @@ const AvailableMeals = () => {
       price={meal.price}
     />
   ));
-  console.log(mealList);
-  console.log('hey');
 
   return (
     <section className={classes.meals}>
