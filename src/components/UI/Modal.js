@@ -24,6 +24,7 @@ const Modal = (props) => {
     //   <Backdrop />
     //   <ModalOverlay>{props.children}</ModalOverlay>
     // </Fragment>
+
     <Fragment>
       {ReactDOM.createPortal(
         <Backdrop onClosed={props.onClosed} />,
