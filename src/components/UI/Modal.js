@@ -20,20 +20,22 @@ const portalElement = document.getElementById('overlays');
 const Modal = (props) => {
   console.log('inside the modal props: ', props);
   return (
-    // <Fragment>
-    //   <Backdrop />
-    //   <ModalOverlay>{props.children}</ModalOverlay>
-    // </Fragment>
-
     <Fragment>
-      {ReactDOM.createPortal(
-        <Backdrop onClosed={props.onClosed} />,
-        portalElement
-      )}
-      {ReactDOM.createPortal(
-        <ModalOverlay>{props.children}</ModalOverlay>,
-        portalElement
-      )}
+      <Fragment>
+        <Backdrop />
+        <ModalOverlay>{props.children}</ModalOverlay>
+      </Fragment>
+
+      <Fragment>
+        {ReactDOM.createPortal(
+          <Backdrop onClosed={props.onClosed} />,
+          portalElement
+        )}
+        {ReactDOM.createPortal(
+          <ModalOverlay>{props.children}</ModalOverlay>,
+          portalElement
+        )}
+      </Fragment>
     </Fragment>
   );
 };
