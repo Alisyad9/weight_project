@@ -1,11 +1,11 @@
-.cart-item {
+/* .cart-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 2px solid #8a2b06;
   padding: 1rem 0;
   margin: 1rem 0;
-}
+} */
 
 .cart-item h2 {
   margin: 0 0 0.5rem 0;
